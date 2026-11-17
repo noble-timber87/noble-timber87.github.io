@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大赛入口在线-赛事日历与参赛指引</title>
+<meta name="description" content="每日大赛入口在线汇总当日与未来一周的公开赛事报名入口、赛程节点和参赛指引，覆盖校园联赛、城市公开赛、线上作品赛等类别，附赛制解析、评审规则变化与常见问题答疑，便于选手按日期快速找到对应赛项与报名通道。">
+<meta name="keywords" content="每日大赛入口在线">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231b3a5c'/%3E%3Cpath d='M9 20l4-9 3 6 3-4 4 7' stroke='%23f2b544' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"每日大赛入口在线","description":"赛事报名入口与赛程节点汇总","inLanguage":"zh-CN"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"城市公开赛报名需要提交哪些材料？","acceptedAnswer":{"@type":"Answer","text":"以2026年11月批次为例，需提交身份证明、既往参赛记录截图和一份两页内的项目说明，报名系统在11月9日23时关闭上传。"}},
+{"@type":"Question","name":"线上作品赛的评审规则今年改了什么？","acceptedAnswer":{"@type":"Answer","text":"2026赛季把创意分从30分降至25分，技术实现分从25分提高到35分，并新增代码可复现性5分，评审细则在10月28日更新到第三版。"}},
+{"@type":"Question","name":"校园联赛跨校组队是否允许？","acceptedAnswer":{"@type":"Answer","text":"允许。华东赛区规定每队最多两名外校成员，需在报名时上传双方学籍证明，缺项会在11月12日公示名单中被标注为待补。"}}
+]}
+</script>
+<style>
+:root{
+  --ink:#16202c;
+  --ink-2:#3d4b5c;
+  --ink-3:#6b7a8d;
+  --paper:#f6f4ef;
+  --card:#ffffff;
+  --line:#dcd8cf;
+  --brand:#1b3a5c;
+  --brand-2:#2e5a86;
+  --accent:#c9791f;
+  --accent-soft:#f7e7cf;
+  --ok:#2f6d52;
+  --warn:#a8442c;
+  --r:10px;
+  --r-s:6px;
+  --sp:clamp(14px,2vw,22px);
+  --sh:0 1px 2px rgba(22,32,44,.06),0 6px 18px rgba(22,32,44,.06);
+  --ff:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,"Microsoft YaHei",serif;
+  --ff-s:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ff-s);font-size:16px;line-height:1.75;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:var(--ff);line-height:1.3;margin:0}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* 吸顶区 */
+.stickwrap{position:sticky;top:0;z-index:60}
+.notice{background:var(--brand);color:#e9eef5;font-size:13.5px;padding:7px 0}
+.notice-in{max-width:1180px;margin:0 auto;padding:0 var(--sp);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.notice b{color:#f2b544;font-weight:600}
+.notice a{color:#f2b544}
+header.site{background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(22,32,44,.04)}
+.head-in{max-width:1180px;margin:0 auto;padding:10px var(--sp);display:flex;align-items:center;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand svg{width:38px;height:38px;flex:0 0 auto}
+.brand-txt{font-family:var(--ff);font-size:19px;font-weight:700;letter-spacing:.5px;color:var(--brand)}
+.menu-btn{display:none;margin-left:auto;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);padding:7px 11px;font-size:14px;color:var(--ink);cursor:pointer}
+nav.main{margin-left:auto}
+nav.main ul{list-style:none;display:flex;gap:4px;margin:0;padding:0;flex-wrap:wrap}
+nav.main a{display:block;padding:6px 10px;border-radius:var(--r-s);font-size:14.5px;color:var(--ink-2)}
+nav.main a:hover{background:#eef2f7;text-decoration:none;color:var(--brand)}
+.head-search{position:relative;flex:0 0 200px}
+.head-search input{width:100%;padding:7px 10px;border:1px solid var(--line);border-radius:var(--r-s);background:#fbfaf7;font:inherit;font-size:14px}
+.search-tip{position:absolute;left:0;right:0;top:calc(100% + 6px);background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);box-shadow:var(--sh);font-size:13.5px;padding:8px 10px;display:none;z-index:70}
+.search-tip.on{display:block}
+
+main{max-width:1180px;margin:0 auto;padding:0 var(--sp) 40px}
+section{scroll-margin-top:132px}
+
+/* 首屏 */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(18px,3vw,40px);align-items:center;padding:clamp(26px,4vw,48px) 0 clamp(20px,3vw,34px)}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:1px;color:var(--accent);background:var(--accent-soft);border-radius:99px;padding:3px 12px;font-weight:600}
+.hero h1{font-size:clamp(30px,4.4vw,46px);letter-spacing:1px;margin:14px 0 12px;color:var(--brand)}
+.hero p.lead{color:var(--ink-2);font-size:16.5px;margin:0 0 18px;max-width:36em}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.btn{display:inline-block;padding:10px 20px;border-radius:var(--r-s);font-size:15px;font-weight:600;border:1px solid transparent}
+.btn-p{background:var(--brand);color:#fff}
+.btn-p:hover{background:var(--brand-2);text-decoration:none;color:#fff}
+.btn-s{background:transparent;border-color:var(--brand);color:var(--brand)}
+.btn-s:hover{background:#eef2f7;text-decoration:none}
+.stats{display:flex;gap:clamp(16px,3vw,34px);flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px}
+.stat b{display:block;font-family:var(--ff);font-size:24px;color:var(--brand);line-height:1.2}
+.stat span{font-size:13px;color:var(--ink-3)}
+.hero-art{position:relative;min-height:300px}
+.hero-art svg{width:100%;height:auto;display:block}
+
+/* 通用板块 */
+.block{padding:clamp(24px,3.4vw,40px) 0;border-top:1px solid var(--line)}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.block-head h2{font-size:clamp(22px,2.6vw,28px);color:var(--brand)}
+.block-head .sub{font-size:14px;color:var(--ink-3);margin-top:4px}
+.more{font-size:14px;white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh)}
+.tagrow{display:flex;flex-wrap:wrap;gap:8px}
+.tag{display:inline-block;font-size:13px;padding:4px 11px;border:1px solid var(--line);border-radius:99px;background:#fbfaf7;color:var(--ink-2)}
+.tag:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+
+/* 领域概览 */
+.ov-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ov-item{padding:16px;border-left:3px solid var(--brand);background:var(--card);border-radius:0 var(--r) var(--r) 0;box-shadow:var(--sh)}
+.ov-item h3{font-size:16px;margin-bottom:6px}
+.ov-item p{margin:0;font-size:14px;color:var(--ink-2)}
+.ov-item em{font-style:normal;color:var(--accent);font-weight:600}
+
+/* 精选推荐 非对称网格 */
+.pick-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px}
+.pick{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);display:flex;flex-direction:column;transition:transform .18s}
+.pick:hover{transform:translateY(-3px)}
+.pick img{width:100%;height:150px;object-fit:cover}
+.pick.big img{height:220px}
+.pick-body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pick-body h3{font-size:16.5px}
+.pick.big h3{font-size:20px}
+.pick-body p{margin:0;font-size:14px;color:var(--ink-2);flex:1}
+.meta{font-size:12.5px;color:var(--ink-3);display:flex;gap:10px;flex-wrap:wrap}
+
+/* 最新更新 列表 */
+.upd-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.upd-list li{display:grid;grid-template-columns:96px 1fr auto;gap:14px;align-items:baseline;padding:11px 2px;border-bottom:1px dashed var(--line);font-size:14.5px}
+.upd-list time{font-family:var(--ff-s);font-size:13px;color:var(--accent);font-weight:600;letter-spacing:.3px}
+.upd-list .what{color:var(--ink)}
+.upd-list .who{font-size:12.5px;color:var(--ink-3);white-space:nowrap}
+
+/* 分类入口 双栏 */
+.cat-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.cat h3{font-size:16px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.cat h3 .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:0 0 auto}
+.cat ul{list-style:none;margin:0;padding:0;font-size:14px}
+.cat li{padding:3px 0;color:var(--ink-2);display:flex;justify-content:space-between;gap:8px;border-bottom:1px dotted #e8e3d9}
+.cat li:last-child{border-bottom:0}
+.cat li span{color:var(--ink-3);font-size:12.5px;flex:0 0 auto}
+
+/* 深度解析 */
+.deep{display:grid;grid-template-columns:minmax(0,1fr) 258px;gap:clamp(18px,3vw,36px);align-items:start}
+.deep-main{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:clamp(18px,2.6vw,30px);box-shadow:var(--sh)}
+.deep-main h3{font-size:18.5px;margin:26px 0 8px;color:var(--brand);padding-left:11px;border-left:3px solid var(--accent)}
+.deep-main h3:first-child{margin-top:0}
+.deep-main p{margin:0 0 12px;color:var(--ink-2)}
+.deep-main strong{color:var(--ink)}
+.quote{border-left:3px solid var(--brand);background:#f2f5f9;padding:12px 16px;border-radius:0 var(--r-s) var(--r-s) 0;font-size:14.5px;color:var(--ink-2);margin:14px 0}
+.check{list-style:none;margin:8px 0 14px;padding:0;font-size:14.5px}
+.check li{position:relative;padding:6px 0 6px 26px;border-bottom:1px dotted #e8e3d9}
+.check li::before{content:"";position:absolute;left:4px;top:15px;width:9px;height:9px;border:2px solid var(--brand-2);border-radius:2px}
+.side-box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;box-shadow:var(--sh);position:sticky;top:132px}
+.side-box h3{font-size:15.5px;margin-bottom:10px}
+.side-nav{list-style:none;margin:0 0 6px;padding:0;font-size:14px}
+.side-nav a{display:block;padding:6px 10px;border-left:3px solid transparent;border-radius:0 var(--r-s) var(--r-s) 0;color:var(--ink-2)}
+.side-nav a:hover{background:#eef2f7;text-decoration:none}
+.side-nav a.active{border-left-color:var(--accent);background:var(--accent-soft);color:var(--brand);font-weight:600}
+.side-note{font-size:13px;color:var(--ink-3);border-top:1px solid var(--line);margin-top:10px;padding-top:10px}
+
+/* 对照面板 */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--card);box-shadow:var(--sh)}
+.vs > div{padding:16px 18px}
+.vs > div:first-child{border-right:1px solid var(--line)}
+.vs h3{font-size:15.5px;margin-bottom:8px}
+.vs .old h3{color:var(--ink-3)}
+.vs .new h3{color:var(--ok)}
+.vs dl{margin:0;font-size:14px}
+.vs dt{font-weight:600;color:var(--ink);margin-top:8px}
+.vs dd{margin:0;color:var(--ink-2)}
+.vs .new dd b{color:var(--ok)}
+
+/* 体验指南 编号步骤 */
+.steps{list-style:none;counter-reset:st;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.steps li{counter-increment:st;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px 14px 52px;position:relative;box-shadow:var(--sh)}
+.steps li::before{content:counter(st,decimal-leading-zero);position:absolute;left:14px;top:14px;font-family:var(--ff);font-size:18px;font-weight:700;color:var(--accent)}
+.steps h3{font-size:15.5px;margin-bottom:4px}
+.steps p{margin:0;font-size:14px;color:var(--ink-2)}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;gap:10px}
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh)}
+summary{cursor:pointer;padding:13px 18px;font-weight:600;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent);font-weight:700;font-size:19px;line-height:1;flex:0 0 auto}
+details[open] summary::after{content:"–"}
+details .ans{padding:0 18px 15px;font-size:14.5px;color:var(--ink-2);border-top:1px dashed var(--line);margin-top:2px;padding-top:12px}
+
+/* 评论 */
+.cmts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:8px}
+.cmt p{margin:0;font-size:14.5px;color:var(--ink-2)}
+.cmt .who{font-size:12.5px;color:var(--ink-3);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.avatar{width:24px;height:24px;border-radius:50%;background:var(--brand);color:#fff;font-size:12px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto}
+.cmt .mood{font-size:12px;padding:1px 8px;border-radius:99px;border:1px solid var(--line);color:var(--ink-3)}
+.cmt .mood.neg{color:var(--warn);border-color:#e7c3b8;background:#fbeee9}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.news{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;box-shadow:var(--sh)}
+.news time{font-size:12.5px;color:var(--accent);font-weight:600}
+.news h3{font-size:16px;margin:5px 0 6px}
+.news p{margin:0;font-size:14px;color:var(--ink-2)}
+
+/* 榜单 */
+.rank{list-style:none;margin:0;padding:0;counter-reset:rk;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.rank li{counter-increment:rk;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px 12px 46px;position:relative;font-size:14.5px}
+.rank li::before{content:counter(rk);position:absolute;left:12px;top:50%;transform:translateY(-50%);font-family:var(--ff);font-size:17px;font-weight:700;color:var(--brand-2)}
+.rank li:nth-child(1)::before,.rank li:nth-child(2)::before,.rank li:nth-child(3)::before{color:var(--accent)}
+.rank small{display:block;color:var(--ink-3);font-size:12.5px}
+
+/* 时间线 */
+.timeline{list-style:none;margin:0;padding:0 0 0 20px;border-left:2px solid var(--line);font-size:14.5px}
+.timeline li{position:relative;padding:0 0 16px 16px}
+.timeline li::before{content:"";position:absolute;left:-25px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--card);border:2px solid var(--brand-2)}
+.timeline b{display:block;font-size:13px;color:var(--accent)}
+.timeline span{color:var(--ink-2)}
+
+/* 页尾 */
+footer.site{background:var(--brand);color:#cfdae7;margin-top:20px}
+.foot-in{max-width:1180px;margin:0 auto;padding:38px var(--sp) 22px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
+footer.site h3{font-size:14px;color:#fff;margin-bottom:10px;letter-spacing:.5px}
+.foot-brand p{font-size:13.5px;margin:8px 0 0;color:#b9c8d9;max-width:24em}
+.foot-brand .brand-txt{color:#fff}
+footer.site ul{list-style:none;margin:0;padding:0;font-size:13.5px}
+footer.site li{padding:3px 0}
+footer.site a{color:#cfdae7}
+footer.site a:hover{color:#f2b544}
+.foot-note{border-top:1px solid rgba(255,255,255,.16);font-size:12.5px;color:#a8b8ca}
+.foot-note-in{max-width:1180px;margin:0 auto;padding:14px var(--sp);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+#toTop{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;background:var(--brand);color:#fff;border:1px solid rgba(255,255,255,.25);box-shadow:var(--sh);cursor:pointer;font-size:18px;display:none;align-items:center;justify-content:center;z-index:80}
+#toTop.on{display:flex}
+#toTop:hover{background:var(--brand-2)}
+
+/* 响应式 */
+@media (max-width:960px){
+  .hero{grid-template-columns:1fr}
+  .hero-art{order:-1;min-height:0;max-width:420px}
+  .ov-grid{grid-template-columns:repeat(2,1fr)}
+  .pick-grid{grid-template-columns:1fr 1fr}
+  .pick.big{grid-column:1 / -1}
+  .cat-wrap{grid-template-columns:1fr 1fr}
+  .deep{grid-template-columns:1fr}
+  .side-box{position:static;order:2}
+  .cmts{grid-template-columns:1fr 1fr}
+  .foot-in{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .menu-btn{display:inline-flex}
+  nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:var(--card);border-bottom:1px solid var(--line);box-shadow:var(--sh);padding:8px var(--sp) 14px}
+  nav.main.open{display:block}
+  nav.main ul{flex-direction:column;gap:2px}
+  nav.main a{padding:10px 8px;font-size:15px}
+  .head-in{position:relative;flex-wrap:wrap}
+  .head-search{flex:1 1 100%;order:5;margin-top:8px}
+  .brand-txt{font-size:17px}
+  .ov-grid,.pick-grid,.cat-wrap,.steps,.cmts,.news-grid,.rank{grid-template-columns:1fr}
+  .pick.big{grid-column:auto}
+  .vs{grid-template-columns:1fr}
+  .vs > div:first-child{border-right:0;border-bottom:1px solid var(--line)}
+  .upd-list li{grid-template-columns:1fr;gap:2px}
+  .upd-list .who{justify-self:start}
+  .foot-in{grid-template-columns:1fr}
+  section{scroll-margin-top:150px}
+  #toTop{width:40px;height:40px;right:12px;bottom:12px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="stickwrap">
+  <div class="notice" id="noticeBar">
+    <div class="notice-in">
+      <span><b>赛程更新</b> 11月8日 城市公开赛资格赛分组已公示，11月9日 23:00 截止报名材料补交</span>
+      <a href="/#updates">查看更新明细</a>
+      <span style="color:#a8b8ca">|</span>
+      <span>线上作品赛评审细则为第三版（10月28日修订）</span>
+    </div>
+  </div>
+
+  <header class="site">
+    <div class="head-in">
+      <a class="brand" href="/#top" aria-label="返回首页">
+        <svg viewBox="0 0 40 40" role="img" aria-hidden="true">
+          <rect width="40" height="40" rx="10" fill="#1b3a5c"/>
+          <path d="M11 26l5-11 4 7 4-5 5 9" fill="none" stroke="#f2b544" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="11" cy="26" r="2.4" fill="#fff"/>
+          <circle cx="29" cy="26" r="2.4" fill="#fff"/>
+        </svg>
+        <span class="brand-txt">每日大赛入口在线</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        导航
+      </button>
+      <nav class="main" id="mainNav" aria-label="主题导航">
+        <ul>
+          <li><a href="/#overview">赛事概览</a></li>
+          <li><a href="/#picks">精选赛项</a></li>
+          <li><a href="/#updates">赛程更新</a></li>
+          <li><a href="/#cats">分类入口</a></li>
+          <li><a href="/#deep">赛制解析</a></li>
+          <li><a href="/#guide">参赛指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#rank">报名热度榜</a></li>
+        </ul>
+      </nav>
+      <div class="head-search">
+        <label for="q" class="sr" style="position:absolute;left:-9999px">查找赛项</label>
+        <input type="search" id="q" placeholder="查赛项：如 城市公开赛" autocomplete="off">
+        <div class="search-tip" id="searchTip" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-label="首屏">
+    <div>
+      <span class="kicker">2026 秋季赛季 · 第 45 周</span>
+      <h1>每日大赛入口在线</h1>
+      <p class="lead">把同一天分散在各平台的赛事报名页归到一处：城市公开赛、校园联赛、线上作品赛、开源挑战赛、青少年创客赛，按日期和赛区排好，报名口、材料清单、评审细则版本一次看全。</p>
+      <div class="hero-actions">
+        <a class="btn btn-p" href="/#updates">查看今日开放入口</a>
+        <a class="btn btn-s" href="/#guide">按步骤报名</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>37</b><span>在办赛项</span></div>
+        <div class="stat"><b>9</b><span>今日开放报名</span></div>
+        <div class="stat"><b>5</b><span>赛区覆盖</span></div>
+        <div class="stat"><b>11-08</b><span>数据核对日</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 340" role="img">
+        <defs>
+          <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e9eef5"/><stop offset="1" stop-color="#f6f4ef"/>
+          </linearGradient>
+        </defs>
+        <rect x="12" y="20" width="396" height="300" rx="16" fill="url(#hg)" stroke="#dcd8cf"/>
+        <rect x="40" y="50" width="150" height="12" rx="6" fill="#1b3a5c" opacity=".85"/>
+        <rect x="40" y="72" width="96" height="8" rx="4" fill="#6b7a8d" opacity=".5"/>
+        <g>
+          <rect x="40" y="100" width="104" height="78" rx="8" fill="#fff" stroke="#dcd8cf"/>
+          <rect x="54" y="114" width="52" height="7" rx="3.5" fill="#c9791f"/>
+          <rect x="54" y="128" width="76" height="6" rx="3" fill="#dcd8cf"/>
+          <rect x="54" y="142" width="64" height="6" rx="3" fill="#dcd8cf"/>
+          <rect x="54" y="158" width="38" height="8" rx="4" fill="#2e5a86"/>
+        </g>
+        <g>
+          <rect x="158" y="100" width="104" height="78" rx="8" fill="#fff" stroke="#dcd8cf"/>
+          <rect x="172" y="114" width="60" height="7" rx="3.5" fill="#1b3a5c"/>
+          <rect x="172" y="128" width="70" height="6" rx="3" fill="#dcd8cf"/>
+          <rect x="172" y="142" width="50" height="6" rx="3" fill="#dcd8cf"/>
+          <rect x="172" y="158" width="44" height="8" rx="4" fill="#c9791f"/>
+        </g>
+        <g>
+          <rect x="276" y="100" width="104" height="78" rx="8" fill="#fff" stroke="#dcd8cf"/>
+          <rect x="290" y="114" width="44" height="7" rx="3.5" fill="#2f6d52"/>
+          <rect x="290" y="128" width="72" height="6" rx="3" fill="#dcd8cf"/>
+          <rect x="290" y="142" width="58" height="6" rx="3" fill="#dcd8cf"/>
+          <rect x="290" y="158" width="36" height="8" rx="4" fill="#6b7a8d"/>
+        </g>
+        <path d="M40 206h340" stroke="#dcd8cf" stroke-dasharray="4 6"/>
+        <g font-family="Georgia,serif" font-size="12" fill="#6b7a8d">
+          <text x="40" y="228">09</text><text x="92" y="228">10</text><text x="144" y="228">11</text><text x="196" y="228">12</text><text x="248" y="228">13</text><text x="300" y="228">14</text><text x="352" y="228">15</text>
+        </g>
+        <g>
+          <rect x="40" y="244" width="340" height="10" rx="5" fill="#e4e0d6"/>
+          <rect x="40" y="244" width="168" height="10" rx="5" fill="#2e5a86"/>
+          <rect x="210" y="244" width="54" height="10" rx="5" fill="#c9791f"/>
+        </g>
+        <g font-family="PingFang SC,sans-serif" font-size="12" fill="#3d4b5c">
+          <text x="40" y="286">已开放 9 项</text>
+          <text x="196" y="286">待审 3 项</text>
+          <text x="300" y="286">明日 6 项</text>
+        </g>
+        <circle cx="356" cy="60" r="16" fill="#f2b544" opacity=".9"/>
+        <path d="M350 60l4 5 8-10" stroke="#1b3a5c" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 领域概览 -->
+  <section class="block" id="overview">
+    <div class="block-head">
+      <div>
+        <h2>赛事领域概览：五类赛项与赛制差异</h2>
+        <div class="sub">按参赛对象和评审方式来分，比按名称分更清楚</div>
+      </div>
+      <a class="more" href="/#cats">全部类别 →</a>
+    </div>
+    <div class="ov-grid">
+      <div class="ov-item">
+        <h3>城市公开赛</h3>
+        <p>面向社会报名，分资格赛与决赛两轮。2026 秋季批次共 <em>6 个赛区</em>，资格赛 11 月 8 日分组公示，决赛 11 月 29 日。</p>
+      </div>
+      <div class="ov-item">
+        <h3>校园联赛</h3>
+        <p>以高校为单位组队，允许跨校，华东赛区限每队 <em>2 名外校成员</em>。校内选拔在 10 月下旬完成，作品提交 11 月 15 日。</p>
+      </div>
+      <div class="ov-item">
+        <h3>线上作品赛</h3>
+        <p>全程线上，提交代码与说明文档。2026 赛季评审权重调整，技术实现分升到 <em>35 分</em>，创意分降到 25 分。</p>
+      </div>
+      <div class="ov-item">
+        <h3>开源挑战赛</h3>
+        <p>以代码仓库提交为主，考察可复现性。新增 <em>5 分</em> 复现性评分，要求提供一键运行脚本与依赖清单。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 精选推荐 -->
+  <section class="block" id="picks">
+    <div class="block-head">
+      <div>
+        <h2>本周精选赛项推荐</h2>
+        <div class="sub">报名尚开放、材料已明确、规则版本稳定的赛项</div>
+      </div>
+      <a class="more" href="/#updates">按日期看全部 →</a>
+    </div>
+    <div class="pick-grid">
+      <article class="pick big">
+        <img src="https://picsum.photos/seed/race-city-open/720/440" width="720" height="440" loading="lazy" alt="城市公开赛资格赛签到处，选手在桌前排号领取参赛证" style="object-fit:cover">
+        <div class="pick-body">
+          <div class="meta"><span>城市公开赛</span><span>资格赛</span><span>11-29 决赛</span></div>
+          <h3>城市公开赛资格赛第 3 组：报名材料补交窗口到 11 月 9 日</h3>
+          <p>第 3 组分配 48 名选手，分两轮淘汰。未提交项目说明的选手需在 11 月 9 日 23:00 前补齐，逾期按未完成报名处理，不进入 11 月 12 日的对阵表公示。</p>
+          <a href="/#faq">报名材料与对赛区有疑问？看答疑 →</a>
+        </div>
+      </article>
+      <article class="pick">
+        <img src="https://picsum.photos/seed/race-campus-league/480/300" width="480" height="300" loading="lazy" alt="校园联赛校内选拔现场，评委在记录表上打分" style="object-fit:cover">
+        <div class="pick-body">
+          <div class="meta"><span>校园联赛</span><span>华东</span></div>
+          <h3>华东校园联赛跨校组队备案</h3>
+          <p>每队外校成员不超过 2 人，需在 11 月 12 日前上传双方学籍证明。今年新增队长确认环节，复核不过的队进入待补名单。</p>
+        </div>
+      </article>
+      <article class="pick">
+        <img src="https://picsum.photos/seed/race-online-work/480/300" width="480" height="300" loading="lazy" alt="线上作品赛提交页面截取，显示代码仓库链接输入框" style="object-fit:cover">
+        <div class="pick-body">
+          <div class="meta"><span>线上作品赛</span><span>第三版细则</span></div>
+          <h3>作品赛创意分下调后的选题建议</h3>
+          <p>创意分 25 分、技术实现 35 分，差距主要落在依赖管理与异常处理。选题偏冷门的队伍要在说明文档里补使用场景与目标人群。</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section class="block" id="updates">
+    <div class="block-head">
+      <div>
+        <h2>赛程与入口更新</h2>
+        <div class="sub">只列规则、时间、名单的实质变动</div>
+      </div>
+      <span class="sub">截至 2026-11-08 18:00</span>
+    </div>
+    <ul class="upd-list">
+      <li><time>11-08</time><span class="what">城市公开赛资格赛 6 个赛区分组表公示，第 3 组 48 人</span><span class="who">组委会赛务组</span></li>
+      <li><time>11-08</time><span class="what">开源挑战赛新增一键运行脚本要求，评分表加 5 分复现性项</span><span class="who">技术评审组</span></li>
+      <li><time>11-07</time><span class="what">线上作品赛评审细则更新至第三版，技术实现分由 25 调整为 35</span><span class="who">线上赛事办公室</span></li>
+      <li><time>11-06</time><span class="what">华东校园联赛报名系统恢复，11 月 5 日的提交记录已回滚并入新库</span><span class="who">平台运维</span></li>
+      <li><time>11-05</time><span class="what">青少年创客赛低龄组命题发布，材料包领取点增设为 12 个</span><span class="who">创客赛组委会</span></li>
+      <li><time>11-04</time><span class="what">城市公开赛决赛场地由原馆改为滨江体育馆，座位数从 900 增至 1400</span><span class="who">场地协调组</span></li>
+      <li><time>11-02</time><span class="what">跨赛区报名限制说明发布，同一赛项每人只可报一个赛区</span><span class="who">组委会赛务组</span></li>
+    </ul>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="block" id="cats">
+    <div class="block-head">
+      <div>
+        <h2>按类别与赛区找入口</h2>
+        <div class="sub">每个入口对应一个正在开放的报名通道或赛程页</div>
+      </div>
+    </div>
+    <div class="cat-wrap">
+      <div class="cat">
+        <h3><span class="dot"></span>按赛项类别</h3>
+        <ul>
+          <li><a href="/#updates">城市公开赛资格赛</a><span>开放中</span></li>
+          <li><a href="/#updates">校园联赛华东赛区</a><span>待补材料</span></li>
+          <li><a href="/#deep">线上作品赛</a><span>11-15 截止</span></li>
+          <li><a href="/#deep">开源挑战赛</a><span>11-18 截止</span></li>
+          <li><a href="/#rank">青少年创客赛</a><span>报名中</span></li>
+          <li><a href="/#faq">教师指导赛</a><span>11-10 开放</span></li>
+        </ul>
+      </div>
+      <div class="cat">
+        <h3><span class="dot"></span>按赛区</h3>
+        <ul>
+          <li><a href="/#updates">华东赛区</a><span>7 项</span></li>
+          <li><a href="/#updates">华南赛区</a><span>6 项</span></li>
+          <li><a href="/#updates">华北赛区</a><span>5 项</span></li>
+          <li><a href="/#updates">西南赛区</a><span>4 项</span></li>
+          <li><a href="/#updates">线上赛区</a><span>9 项</span></li>
+        </ul>
+      </div>
+      <div class="cat">
+        <h3><span class="dot"></span>按关键日期</h3>
+        <ul>
+          <li><a href="/#timeline">11-09 材料补交截止</a><span>今天</span></li>
+          <li><a href="/#timeline">11-12 名单公示</a><span>4 天后</span></li>
+          <li><a href="/#timeline">11-15 作品提交截止</a><span>7 天后</span></li>
+          <li><a href="/#timeline">11-18 仓库冻结</a><span>10 天后</span></li>
+          <li><a href="/#timeline">11-29 公开赛决赛</a><span>21 天后</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="block" id="deep">
+    <div class="block-head">
+      <div>
+        <h2>深度解析：评审权重调整会淘汰哪类作品</h2>
+        <div class="sub">以线上作品赛第二版与第三版细则为对照，逐项拆开</div>
+      </div>
+    </div>
+    <div class="deep">
+      <div class="deep-main">
+        <h3>一、结论先摆出来</h3>
+        <p>技术实现分从 25 提到 35、创意分从 30 降到 25 之后，靠概念新颖但工程粗糙的作品，总分上限被压掉约 <strong>7 分</strong>；反过来，工程完整而选题平庸的作品能多拿约 4 分。这个判断可核对的依据是两版评分表的分项权重与 2025 赛季 162 件入围作品的分数分布。</p>
+        <p>换句话说，第三版细则更适合把选题普通但做得扎实的队伍。2025 赛季有 <strong>38 件</strong> 作品创意分在 24 分以上、技术分低于 15 分，按第三版折算后有 31 件会跌出前 50 名。这是区间推算，不是官方结果。</p>
+
+        <h3>二、可核对的结构：两版评分表对照</h3>
+        <ul class="check">
+          <li>创意分：第二版 30 分 → 第三版 25 分，下降 5 分</li>
+          <li>技术实现：第二版 25 分 → 第三版 35 分，上升 10 分</li>
+          <li>复现性：第二版未单列 → 第三版 5 分，要求一键运行脚本</li>
+          <li>说明文档：两版均为 20 分，但第三版明确“目标人群”必填</li>
+          <li>展示答辩：两版均为 20 分，第三版把答辩时长从 8 分钟压到 6 分钟</li>
+        </ul>
+        <p>数字来自 10 月 28 日发布的第三版细则第 4 页评分表，与 9 月 12 日第二版的第 3 页逐项对齐。两版都保留“评委可在总分基础上给予不超过 3 分的特别加分”，这条没变，答辩时间却短了两分钟，意味着现场陈述要更集中。</p>
+
+        <h3>三、说法的分歧在哪</h3>
+        <p>10 月 30 日一场线上说明会上，有参赛者提问：复现性 5 分是否会变成“有没有写 README”的形式分。技术评审组当场回应，评分不看文档长度，看评委能否在 10 分钟内跑通主流程，跑不通即 0 分。这条回应目前只在会议记录里，尚未写进细则正文，属于有效但可变更的口径。</p>
+        <div class="quote">转述：赛务组在 11 月 5 日的邮件里说，复现环境不限定操作系统，但要求列出依赖版本号与最低运行内存。若清单缺失，按复现性项扣 2 分，不直接归零。</div>
+        <p>需要区分的是：评审组的会议口头回应、邮件里的操作口径、细则正文，三者效力不同。前者可以调整，后者才写入最终评分。队伍准备材料时以正文为准，邮件口径作为补充。</p>
+
+        <h3>四、一个具体的案例时间线</h3>
+        <p>2025 赛季第 7 名作品《公交到站预测小工具》，创意分 27、技术分 14、文档 17、答辩 16，总分 74。按第三版折算，创意 22.5、技术 19.6、复现性 0（当时未提交脚本）、文档 17、答辩 16，合计约 75.1——名次大致不变，但结构从“创意撑起来”变成“技术补上来”。</p>
+        <p>再看第 41 名作品《旧书交换地图》，创意 25、技术 11、文档 15、答辩 14，合计 65。折算后创意 20.8、技术 15.4、复现 0、文档 15、答辩 14，约 65.2。名次不动，但和前排的差距从 9 分拉大到 10 分左右。结论是：新权重惩罚的是“技术短板明显且没有复现材料”的作品，而不是所有创意型作品。</p>
+
+        <h3>五、哪类队伍该改策略</h3>
+        <p>如果队伍里没有能独立部署的人，先补部署，再谈选题。11 月 15 日提交截止前还有一周，把 README、依赖清单、启动脚本补齐，能拿到复现性里的 3 至 5 分，这比改选题的收益确定得多。选题偏冷门的队伍，在说明文档里补“目标人群 + 使用场景 + 与现有工具的区别”三段，对应文档分的评分点。</p>
+        <p>反过来，如果队伍已经有成熟工程但选题普通，不必临时换题。第三版权重对这类作品更友好，把答辩压缩到 6 分钟内讲清“解决了谁的什么问题”，比堆功能更有效。</p>
+      </div>
+      <aside class="side-box" aria-label="本页导航">
+        <h3>页内导航</h3>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">赛事概览</a></li>
+          <li><a href="/#picks">精选赛项</a></li>
+          <li><a href="/#updates">赛程更新</a></li>
+          <li><a href="/#cats">分类入口</a></li>
+          <li><a href="/#deep">赛制解析</a></li>
+          <li><a href="/#compare">规则对照</a></li>
+          <li><a href="/#guide">参赛指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">选手评论</a></li>
+        </ul>
+        <div class="side-note">侧栏随滚动高亮当前板块。手机端导航在页头按钮内展开。</div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 规则对照面板 -->
+  <section class="block" id="compare">
+    <div class="block-head">
+      <div>
+        <h2>第二版与第三版评审细则对照</h2>
+        <div class="sub">同一张评分表，前后两版并排看</div>
+      </div>
+    </div>
+    <div class="vs">
+      <div class="old">
+        <h3>第二版（2026-09-12）</h3>
+        <dl>
+          <dt>创意分</dt><dd>30 分，看重选题差异度</dd>
+          <dt>技术实现</dt><dd>25 分，功能可用即可</dd>
+          <dt>复现性</dt><dd>未单列，含在技术分内</dd>
+          <dt>说明文档</dt><dd>20 分，未强制写目标人群</dd>
+          <dt>展示答辩</dt><dd>20 分，时长 8 分钟</dd>
+        </dl>
+      </div>
+      <div class="new">
+        <h3>第三版（2026-10-28）</h3>
+        <dl>
+          <dt>创意分</dt><dd><b>25 分</b>，选题差异度权重下降</dd>
+          <dt>技术实现</dt><dd><b>35 分</b>，异常处理与依赖管理计入</dd>
+          <dt>复现性</dt><dd><b>5 分</b>，10 分钟内跑通主流程</dd>
+          <dt>说明文档</dt><dd>20 分，<b>目标人群必填</b></dd>
+          <dt>展示答辩</dt><dd>20 分，<b>时长缩至 6 分钟</b></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 体验指南 -->
+  <section class="block" id="guide">
+    <div class="block-head">
+      <div>
+        <h2>从看到入口到完成报名的六个步骤</h2>
+        <div class="sub">以城市公开赛与线上作品赛为例，步骤通用</div>
+      </div>
+    </div>
+    <ol class="steps">
+      <li>
+        <h3>确认赛项与赛区</h3>
+        <p>同一赛项每人只可报一个赛区，11 月 2 日发布的限制说明已生效。先确认自己属于哪个赛区，再点报名入口。</p>
+      </li>
+      <li>
+        <h3>核对报名截止时间</h3>
+        <p>城市公开赛材料补交到 11 月 9 日 23:00；线上作品赛提交截止 11 月 15 日 24:00。时间以报名页顶部倒计时为准。</p>
+      </li>
+      <li>
+        <h3>准备身份与学籍材料</h3>
+        <p>校园联赛跨校组队需双方学籍证明；公开赛需身份证明与既往参赛记录截图，截图要能看到赛事名称和姓名。</p>
+      </li>
+      <li>
+        <h3>提交项目说明</h3>
+        <p>两页以内，写清目标人群、使用场景、与现有工具的区别。线上作品赛的文档分里，这三项各占 4 至 6 分。</p>
+      </li>
+      <li>
+        <h3>上传代码仓库或作品包</h3>
+        <p>开源挑战赛要求一键运行脚本与依赖清单，缺清单扣 2 分复现性。仓库需在 11 月 18 日冻结前设为公开可读。</p>
+      </li>
+      <li>
+        <h3>核对公示名单</h3>
+        <p>11 月 12 日公示待补名单，被标注“待补”的选手要在 48 小时内补材料。名单公示后不再接受新增报名。</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="block-head">
+      <div>
+        <h2>报名与参赛常见问题</h2>
+        <div class="sub">问的是规则，答的是具体口径</div>
+      </div>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>城市公开赛资格赛分组还能调整吗？</summary>
+        <div class="ans">11 月 8 日公示的分组表在 11 月 10 日 18:00 前接受一次调整申请，理由限于时间冲突与场地距离，需提交证明。11 月 12 日对阵表公示后不再调整。</div>
+      </details>
+      <details>
+        <summary>线上作品赛复现性 5 分怎么评？</summary>
+        <div class="ans">评委在干净环境里按仓库说明跑主流程，10 分钟内跑通得 5 分，跑通但需手动修依赖得 3 分，跑不通得 0 分。依赖清单缺失另扣 2 分。口径来自 11 月 5 日赛务组邮件，细则正文未单列扣分档。</div>
+      </details>
+      <details>
+        <summary>校园联赛跨校组队要交哪些证明？</summary>
+        <div class="ans">双方学籍证明各一份，需含学校名称、学号、在读状态，拍摄或扫描件均可。每队外校成员不超过 2 人，队长须为本校在读。11 月 12 日公示时缺项队伍标注为待补，48 小时内补齐才算报名成功。</div>
+      </details>
+      <details>
+        <summary>开源挑战赛仓库提前公开会泄露方案吗？</summary>
+        <div class="ans">评分只看冻结时点的提交内容，提前公开不影响评分。但 11 月 18 日冻结后不得再改主分支，评委会以冻结提交为准。若担心泄露，可先建私有仓库，冻结前转公开并提交链接。</div>
+      </details>
+      <details>
+        <summary>青少年创客赛材料包在哪领？</summary>
+        <div class="ans">低龄组材料包领取点从 8 个增到 12 个，分布在滨江、城西、大学城三片，领取需带报名编号。11 月 5 日命题发布后即可领取，最晚 11 月 16 日，逾期改为邮寄，运费自理。</div>
+      </details>
+      <details>
+        <summary>决赛改到滨江体育馆后交通怎么安排？</summary>
+        <div class="ans">场馆座位从 900 增至 1400，地铁 4 号线滨江站 B 口步行约 600 米。组委会在 11 月 29 日决赛当天安排两班接驳车，从老馆原址出发，8:30 与 9:30 各一班，凭参赛证上车。</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- 用户评论 -->
+  <section class="block" id="comments">
+    <div class="block-head">
+      <div>
+        <h2>选手与指导教师的留言</h2>
+        <div class="sub">含中性评价与对具体条目的吐槽</div>
+      </div>
+    </div>
+    <div class="cmts">
+      <article class="cmt">
+        <p>第三版把答辩压到 6 分钟，我们队彩排了三遍才讲完。复现脚本交了，评委说依赖版本写全了，给了 5 分。这个改法对工程队友好。</p>
+        <div class="who"><span class="avatar">陈</span><span>陈屿 · 线上作品赛</span><span class="mood">正面</span></div>
+      </article>
+      <article class="cmt">
+        <p>分组表 11 月 8 日晚上才出，第 3 组 48 人排两轮，第一轮就撞上上届八强。赛程排得有点挤，希望明年资格赛能提前一周公示。</p>
+        <div class="who"><span class="avatar">林</span><span>林承宇 · 城市公开赛</span><span class="mood neg">吐槽</span></div>
+      </article>
+      <article class="cmt">
+        <p>华东赛区跨校组队的学籍证明要求写得很清楚，上传后 11 月 12 日名单里我们队没被标待补。流程比去年顺，报名系统 11 月 5 日那次回滚也没影响我们。</p>
+        <div class="who"><span class="avatar">周</span><span>周雨桐 · 校园联赛</span><span class="mood">中性</span></div>
+      </article>
+      <article class="cmt">
+        <p>开源挑战赛的“一键运行脚本”说得玄，实际上就是写个 shell 把依赖装好。我按细则第 4 页的清单做了，10 分钟跑通。这条要求本身不算过分。</p>
+        <div class="who"><span class="avatar">高</span><span>高维 · 开源挑战赛</span><span class="mood">中性</span></div>
+      </article>
+      <article class="cmt">
+        <p>创意分从 30 降到 25，我们这种做视觉设计的队吃亏。技术分涨 10 分，等于逼所有人写后端。细则改之前没见征求意见，只发了邮件通知。</p>
+        <div class="who"><span class="avatar">吴</span><span>吴斯羽 · 线上作品赛</span><span class="mood neg">吐槽</span></div>
+      </article>
+      <article class="cmt">
+        <p>带队参加青少年创客赛低龄组，材料包领取点从 8 个增到 12 个确实方便，滨江点离家两站地铁。命题 11 月 5 日发，孩子这周末就能动手。</p>
+        <div class="who"><span class="avatar">郑</span><span>郑敏 · 指导教师</span><span class="mood">正面</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section class="block" id="news">
+    <div class="block-head">
+      <div>
+        <h2>同类赛项资讯</h2>
+        <div class="sub">规则、场地、名单三类的变动通报</div>
+      </div>
+    </div>
+    <div class="news-grid">
+      <article class="news">
+        <time>2026-11-06</time>
+        <h3>校园联赛报名系统回滚：11 月 5 日提交记录已并入新库</h3>
+        <p>平台运维确认，11 月 5 日 14:20 至 17:40 的提交记录在回滚后完整保留，队伍无需重新上传。报名页状态若显示“未提交”，以 11 月 12 日公示名单为准。</p>
+      </article>
+      <article class="news">
+        <time>2026-11-04</time>
+        <h3>城市公开赛决赛换馆：滨江体育馆座位增至 1400</h3>
+        <p>原场馆在 11 月 3 日消防复检中受限，决赛改到滨江体育馆。参赛证不换，入场口改为东门，接驳车从老馆原址发车。</p>
+      </article>
+      <article class="news">
+        <time>2026-11-02</time>
+        <h3>跨赛区报名限制生效：同一赛项每人只能报一个赛区</h3>
+        <p>组委会赛务组在 11 月 2 日发布说明，重复报名系统会自动保留最早提交的一条，其余作废。已缴费的重复报名按原路退回，退款周期 7 个工作日。</p>
+      </article>
+      <article class="news">
+        <time>2026-10-30</time>
+        <h3>开源挑战赛技术评审说明会：复现环境不限操作系统</h3>
+        <p>评审组在说明会上表示，复现只要求列出依赖版本与最低运行内存，不限定系统。会议记录暂未写进细则正文，队伍以邮件口径为准。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 相关推荐标签 -->
+  <section class="block" id="tags">
+    <div class="block-head">
+      <div>
+        <h2>相关赛项与入口标签</h2>
+        <div class="sub">按搜索习惯整理的入口词</div>
+      </div>
+    </div>
+    <div class="tagrow">
+      <a class="tag" href="/#updates">城市公开赛报名入口</a>
+      <a class="tag" href="/#updates">校园联赛华东赛区报名</a>
+      <a class="tag" href="/#deep">线上作品赛提交截止时间</a>
+      <a class="tag" href="/#compare">作品赛评审细则第三版</a>
+      <a class="tag" href="/#deep">开源挑战赛复现性评分</a>
+      <a class="tag" href="/#rank">青少年创客赛材料包领取</a>
+      <a class="tag" href="/#faq">公开赛资格赛分组查询</a>
+      <a class="tag" href="/#guide">跨校组队学籍证明要求</a>
+      <a class="tag" href="/#timeline">11 月赛程关键日期</a>
+      <a class="tag" href="/#news">滨江体育馆决赛交通</a>
+      <a class="tag" href="/#faq">重复报名退款流程</a>
+      <a class="tag" href="/#guide">答辩 6 分钟准备清单</a>
+    </div>
+  </section>
+
+  <!-- 榜单 -->
+  <section class="block" id="rank">
+    <div class="block-head">
+      <div>
+        <h2>报名热度榜（11 月第一周）</h2>
+        <div class="sub">按报名页访问量与提交数加权，样本为 5 个赛区</div>
+      </div>
+    </div>
+    <ol class="rank">
+      <li>城市公开赛资格赛第 3 组<small>48 人名额，报名 213 人，录取比约 4.4:1</small></li>
+      <li>线上作品赛（第三版细则）<small>提交 386 件，较第二版同期增 21%</small></li>
+      <li>青少年创客赛低龄组<small>材料包领取 172 份，12 个领取点</small></li>
+      <li>开源挑战赛<small>仓库提交 94 个，带一键脚本的占 63%</small></li>
+      <li>校园联赛华东赛区<small>队伍 121 支，跨校队 27 支</small></li>
+      <li>城市公开赛华南赛区<small>名额 40，报名 156 人</small></li>
+      <li>教师指导赛<small>11 月 10 日开放，预登记 58 人</small></li>
+      <li>城市公开赛西南赛区<small>名额 36，报名 92 人</small></li>
+      <li>校园联赛华北赛区<small>队伍 88 支，校内选拔完成 74 支</small></li>
+      <li>开源挑战赛入门组<small>仓库提交 41 个，首周可用率 76%</small></li>
+    </ol>
+  </section>
+
+  <!-- 时间线 -->
+  <section class="block" id="timeline">
+    <div class="block-head">
+      <div>
+        <h2>11 月关键时间线</h2>
+        <div class="sub">只列必须动作，按日期排</div>
+      </div>
+    </div>
+    <ul class="timeline">
+      <li><b>11-09 23:00</b><span>城市公开赛资格赛材料补交截止，逾期不进 11 月 12 日对阵表</span></li>
+      <li><b>11-10 18:00</b><span>分组调整申请截止，理由限时间冲突与场地距离</span></li>
+      <li><b>11-10</b><span>教师指导赛报名开放，预登记 58 人可优先提交</span></li>
+      <li><b>11-12</b><span>城市公开赛对阵表与校园联赛待补名单同日公示</span></li>
+      <li><b>11-15 24:00</b><span>线上作品赛提交截止，之后只接受材料更正不接受新作品</span></li>
+      <li><b>11-16</b><span>青少年创客赛材料包领取截止，逾期改邮寄</span></li>
+      <li><b>11-18</b><span>开源挑战赛仓库冻结，主分支锁定，评委按冻结提交评分</span></li>
+      <li><b>11-29</b><span>城市公开赛决赛，滨江体育馆，座位 1400</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="foot-in">
+    <div class="foot-brand">
+      <div class="brand" style="gap:8px">
+        <svg viewBox="0 0 40 40" width="34" height="34" role="img" aria-hidden="true">
+          <rect width="40" height="40" rx="10" fill="#f2b544"/>
+          <path d="M11 26l5-11 4 7 4-5 5 9" fill="none" stroke="#1b3a5c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-txt" style="color:#fff;font-size:17px">每日大赛入口在线</span>
+      </div>
+      <p>把公开赛、校园联赛与线上作品的报名口按日期归拢，规则版本和材料清单跟赛程同步更新。示例数据说明：本站赛项名称、人数、分数与时间条目为演示用示例，报名请以各组委会官方通知为准。</p>
+    </div>
+    <div>
+      <h3>赛项入口</h3>
+      <ul>
+        <li><a href="/#updates">城市公开赛资格赛</a></li>
+        <li><a href="/#updates">校园联赛华东赛区</a></li>
+        <li><a href="/#deep">线上作品赛</a></li>
+        <li><a href="/#deep">开源挑战赛</a></li>
+        <li><a href="/#rank">青少年创客赛</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>参赛参考</h3>
+      <ul>
+        <li><a href="/#guide">报名六步骤</a></li>
+        <li><a href="/#compare">评审细则对照</a></li>
+        <li><a href="/#timeline">11 月时间线</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#tags">入口标签</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>更新与反馈</h3>
+      <ul>
+        <li><a href="/#news">资讯变动</a></li>
+        <li><a href="/#comments">选手留言</a></li>
+        <li><a href="/#rank">热度榜</a></li>
+        <li><a href="/#updates">更新明细</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-note">
+    <div class="foot-note-in">
+      <span>页面数据核对日：2026-11-08 18:00 · 对应可核对更新项：资格赛分组公示、作品赛第三版细则、体育馆变更</span>
+      <span>© 2026 每日大赛入口在线 · 示例站点，报名以官方通知为准</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到页面顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.closest('a')&&window.innerWidth<=720){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>600){toTop.classList.add('on');}else{toTop.classList.remove('on');}
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  // 侧栏滚动高亮
+  var links=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets=links.map(function(a){
+    var id=a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+  if('IntersectionObserver' in window&&targets.length){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(a){a.classList.remove('active');});
+          var match=links.filter(function(a){return a.getAttribute('href').replace('/#','')===en.target.id;})[0];
+          if(match){match.classList.add('active');}
+        }
+      });
+    },{rootMargin:'-140px 0px -60% 0px',threshold:0});
+    targets.forEach(function(t){io.observe(t);});
+  }
+
+  // 本地搜索
+  var q=document.getElementById('q');
+  var tip=document.getElementById('searchTip');
+  var pool=[].slice.call(document.querySelectorAll('main section article, main section li, main section .cat, main section details, main section .rank li'));
+  var seen=new Set();
+  var items=[];
+  pool.forEach(function(el){
+    if(seen.has(el))return;seen.add(el);
+    var text=(el.querySelector('h3,summary')||el).textContent.trim().replace(/\s+/g,' ');
+    if(text&&text.length>3&&items.length<120){items.push({el:el,text:text});}
+  });
+  function run(){
+    var kw=q.value.trim().toLowerCase();
+    if(!kw){tip.classList.remove('on');tip.textContent='';return;}
+    var hits=items.filter(function(it){return it.text.toLowerCase().indexOf(kw)>-1;}).slice(0,6);
+    tip.classList.add('on');
+    if(!hits.length){tip.textContent='没有匹配“'+q.value.trim()+'”的赛项，换个词试试，比如“公开赛”“作品赛”“复现性”。';return;}
+    tip.innerHTML='';
+    hits.forEach(function(h){
+      var a=document.createElement('a');
+      a.href='javascript:void(0)';
+      a.style.cssText='display:block;padding:5px 0;color:#16202c';
+      a.textContent=h.text;
+      a.addEventListener('click',function(){
+        var sec=h.el.closest('section');
+        var id=sec?sec.id:'top';
+        location.hash=id;
+        h.el.scrollIntoView({behavior:'smooth',block:'center'});
+        tip.classList.remove('on');
+      });
+      tip.appendChild(a);
+    });
+  }
+  if(q){q.addEventListener('input',run);}
+  document.addEventListener('click',function(e){
+    if(tip&&!tip.contains(e.target)&&e.target!==q){tip.classList.remove('on');}
+  });
+})();
+</script>
+</body>
+                       </html>
