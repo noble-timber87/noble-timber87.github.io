@@ -1,0 +1,1094 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ks舞团-街舞团体排练与招募</title>
+<meta name="description" content="ks舞团专注齐舞与编舞作品，汇总2026年11月排练日程、招募考核、比赛报名与成员作品解析，提供入门体验课与动作拆解，帮助舞者快速找到合适的队伍和训练节奏。">
+<meta name="keywords" content="ks舞团">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121a2b'/%3E%3Cpath d='M20 16v32M20 32l18-16M20 32l18 16' stroke='%23ffcc33' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#121a2b;
+  --ink-2:#1e2a40;
+  --paper:#f6f4ef;
+  --card:#ffffff;
+  --line:#dcd6c8;
+  --muted:#5f6675;
+  --gold:#e0a81c;
+  --gold-soft:#fbf1d8;
+  --teal:#1f6f6b;
+  --teal-soft:#e2f1ef;
+  --red:#b4453a;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 8px 24px rgba(18,26,43,.08);
+  --space-1:8px;
+  --space-2:14px;
+  --space-3:22px;
+  --space-4:32px;
+  --space-5:48px;
+  --maxw:1180px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:118px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font);font-size:16px;line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+h1,h2,h3,h4{line-height:1.35;margin:0}
+p{margin:0 0 12px}
+ul,ol{margin:0;padding:0;list-style:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+/* 吸顶公告 + 页头 */
+.sticky-top{position:sticky;top:0;z-index:60}
+.announce{
+  background:var(--ink);color:#f3eee2;font-size:14px;
+  border-bottom:1px solid #2a3550;
+}
+.announce .wrap{display:flex;gap:12px;align-items:center;padding:7px 20px;flex-wrap:wrap}
+.announce .tag{background:var(--gold);color:#20180a;font-weight:700;font-size:12px;padding:2px 8px;border-radius:999px;letter-spacing:.5px}
+.announce a{color:#ffd98a;border-bottom:1px dashed #a98a4a}
+.announce a:hover{color:#fff}
+.site-head{background:rgba(246,244,239,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;gap:20px;padding:12px 20px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:.5px}
+.brand svg{width:38px;height:38px;flex:none}
+.main-nav{margin-left:auto}
+.main-nav ul{display:flex;gap:4px;flex-wrap:wrap}
+.main-nav a{display:block;padding:8px 12px;border-radius:var(--radius-sm);font-size:15px;color:var(--ink-2)}
+.main-nav a:hover{background:var(--gold-soft)}
+.head-tools{display:flex;align-items:center;gap:8px}
+.search-box{display:flex;align-items:center;gap:6px}
+.search-box input{
+  width:170px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;
+  background:#fff;font-size:14px;font-family:inherit;
+}
+.search-box input:focus{border-color:var(--gold)}
+.search-box button{
+  padding:8px 16px;border:none;border-radius:999px;background:var(--ink);color:#fff;
+  font-size:14px;cursor:pointer;font-family:inherit;
+}
+.search-box button:hover{background:var(--ink-2)}
+.search-feedback{font-size:13px;color:var(--red);width:100%;display:none}
+.menu-toggle{display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-sm);padding:7px 14px;font-family:inherit;font-size:15px;cursor:pointer}
+
+/* 首屏 */
+.hero{padding:var(--space-4) 0 var(--space-5);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--space-4);align-items:center}
+.hero-eyebrow{display:inline-block;font-size:13px;letter-spacing:2px;color:var(--teal);font-weight:700;background:var(--teal-soft);padding:3px 12px;border-radius:999px;margin-bottom:16px}
+.hero h1{font-size:clamp(32px,4.4vw,52px);letter-spacing:1px;margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--gold);position:relative}
+.hero-desc{font-size:17px;color:var(--ink-2);max-width:30em}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;padding:11px 24px;border-radius:999px;font-weight:700;font-size:15px;transition:transform .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--ink);color:#fff}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.hero-stats{display:flex;gap:26px;margin-top:28px;flex-wrap:wrap}
+.hero-stats div{min-width:96px}
+.hero-stats strong{display:block;font-size:24px;color:var(--ink)}
+.hero-stats span{font-size:13px;color:var(--muted)}
+.hero-art{position:relative;aspect-ratio:1/1;max-width:420px;justify-self:end;width:100%}
+.hero-art svg{width:100%;height:100%}
+.hero-badge{
+  position:absolute;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:10px 14px;font-size:13px;line-height:1.4;
+}
+.hero-badge b{display:block;font-size:15px;color:var(--teal)}
+.hero-badge.b1{top:6%;left:-4%}
+.hero-badge.b2{bottom:8%;right:-2%}
+.hero-badge.b2 b{color:var(--gold)}
+@media (max-width:860px){.hero-badge.b1{left:0}.hero-badge.b2{right:0}}
+
+/* 主内容 */
+.main-wrap{padding-bottom:var(--space-5)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--space-4);align-items:start}
+.section{margin-bottom:var(--space-5)}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.sec-head h2{font-size:23px;letter-spacing:.5px}
+.sec-head .sub{font-size:13px;color:var(--muted)}
+.sec-head::after{content:"";flex:1;height:1px;background:var(--line);min-width:30px}
+
+/* 分类入口 标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:10px}
+.tag-index a{
+  display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border-radius:999px;
+  background:#fff;border:1px solid var(--line);font-size:14px;transition:border-color .18s,transform .18s;
+}
+.tag-index a:hover{border-color:var(--gold);transform:translateY(-2px)}
+.tag-index .num{font-size:12px;color:var(--muted)}
+
+/* 卡片网格 */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card img{aspect-ratio:16/10;width:100%;object-fit:cover}
+.card-body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card-kicker{font-size:12px;color:var(--teal);font-weight:700;letter-spacing:.5px}
+.card h3{font-size:16px}
+.card p{font-size:14px;color:var(--ink-2);margin:0}
+.card-meta{font-size:12px;color:var(--muted);margin-top:auto;padding-top:6px}
+
+/* 精选大卡 */
+.feature-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}
+.feature-main{
+  background:var(--ink);color:#f0ebdf;border-radius:var(--radius);padding:26px;
+  display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden;
+}
+.feature-main::after{
+  content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;
+  border-radius:50%;background:radial-gradient(circle,rgba(224,168,28,.35),transparent 70%);
+}
+.feature-main .tag{font-size:12px;color:var(--gold);letter-spacing:2px;font-weight:700}
+.feature-main h3{font-size:22px;color:#fff}
+.feature-main p{font-size:14.5px;color:#cdd3e0}
+.feature-main .who{font-size:13px;color:#9aa4ba;border-top:1px solid #33405c;padding-top:12px;margin-top:auto}
+.feature-side{display:flex;flex-direction:column;gap:12px}
+.side-item{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:13px 15px;display:flex;gap:12px;align-items:flex-start;
+}
+.side-item .date{
+  flex:none;text-align:center;background:var(--gold-soft);border-radius:var(--radius-sm);
+  padding:4px 8px;font-size:12px;color:#7a5c0d;font-weight:700;line-height:1.2;
+}
+.side-item .date b{display:block;font-size:18px}
+.side-item h3{font-size:15px;margin-bottom:3px}
+.side-item p{font-size:13px;color:var(--muted);margin:0}
+
+/* 最新更新紧凑列表 */
+.updates{border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden}
+.update-row{display:flex;gap:14px;padding:13px 18px;border-bottom:1px solid #eee9dd;align-items:flex-start;flex-wrap:wrap}
+.update-row:last-child{border-bottom:none}
+.update-row time{flex:none;font-size:13px;color:var(--muted);width:88px;font-variant-numeric:tabular-nums}
+.update-row .utype{flex:none;font-size:12px;padding:1px 8px;border-radius:999px;background:var(--teal-soft);color:var(--teal);font-weight:700}
+.update-row .utype.gold{background:var(--gold-soft);color:#7a5c0d}
+.update-row .utype.red{background:#f7e3e0;color:var(--red)}
+.update-row p{font-size:14.5px;margin:0;flex:1;min-width:200px}
+
+/* 深度解析 */
+.article{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 30px;
+}
+.article h2{margin-bottom:6px}
+.article .lead{color:var(--muted);font-size:14px;margin-bottom:20px;border-bottom:1px dashed var(--line);padding-bottom:16px}
+.article h3{font-size:18px;margin:26px 0 10px;padding-left:12px;border-left:4px solid var(--gold)}
+.article p{font-size:15.5px}
+.article .callout{
+  background:var(--teal-soft);border-left:4px solid var(--teal);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  padding:12px 16px;font-size:14.5px;color:var(--teal);margin:16px 0;
+}
+.table-wrap{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+th{background:var(--gold-soft);color:#5c470d;font-weight:700}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.split-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0}
+.panel{border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px;background:var(--paper)}
+.panel h4{font-size:15px;margin-bottom:8px;color:var(--teal)}
+.panel.alt h4{color:var(--red)}
+.panel ul li{font-size:14px;padding-left:16px;position:relative;margin-bottom:5px}
+.panel ul li::before{content:"—";position:absolute;left:0;color:var(--muted)}
+
+/* 体验指南 编号步骤 */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:step}
+.step{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;position:relative;
+  counter-increment:step;
+}
+.step::before{
+  content:counter(step,decimal-leading-zero);font-size:26px;font-weight:800;color:var(--gold);
+  display:block;margin-bottom:8px;font-variant-numeric:tabular-nums;
+}
+.step h3{font-size:15.5px;margin-bottom:6px}
+.step p{font-size:13.5px;color:var(--ink-2);margin:0}
+
+/* FAQ */
+.faq details{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;padding:15px 18px;font-weight:700;font-size:15.5px;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:20px;color:var(--gold);flex:none;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details[open] summary{border-bottom:1px solid var(--line);background:var(--gold-soft)}
+.faq .answer{padding:14px 18px;font-size:14.5px;color:var(--ink-2)}
+.faq .answer p{margin-bottom:8px}
+.faq .answer p:last-child{margin-bottom:0}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.comment{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px;
+  display:flex;flex-direction:column;gap:9px;
+}
+.comment .who{display:flex;align-items:center;gap:9px;font-size:13px}
+.avatar{width:32px;height:32px;border-radius:50%;background:var(--gold-soft);color:#7a5c0d;display:grid;place-items:center;font-weight:800;font-size:14px;flex:none}
+.comment .who b{font-size:14px}
+.comment .who span{color:var(--muted);font-size:12px}
+.comment p{font-size:14px;margin:0}
+.comment .quote{background:var(--paper);border-radius:var(--radius-sm);padding:8px 11px;font-size:13px;color:var(--teal)}
+
+/* 引语卡 / 证言 */
+.quote-card{
+  background:var(--ink);color:#eee8db;border-radius:var(--radius);padding:26px 28px;
+  display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;
+}
+.quote-card blockquote{margin:0;font-size:17px;line-height:1.85}
+.quote-card blockquote::before{content:"“";color:var(--gold);font-size:34px;line-height:0;vertical-align:-10px;margin-right:4px}
+.quote-card cite{display:block;font-style:normal;font-size:13px;color:#9aa4ba;margin-top:12px}
+.quote-logo{
+  width:96px;height:96px;border-radius:50%;border:2px solid var(--gold);
+  display:grid;place-items:center;font-weight:800;color:var(--gold);font-size:15px;text-align:center;line-height:1.3;
+}
+
+/* 榜单 */
+.rank-list{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+.rank-row{display:flex;gap:14px;padding:14px 18px;border-bottom:1px solid #eee9dd;align-items:center}
+.rank-row:last-child{border-bottom:none}
+.rank-no{font-size:20px;font-weight:800;color:var(--gold);width:34px;flex:none;font-variant-numeric:tabular-nums}
+.rank-row:nth-child(-n+3) .rank-no{color:var(--red)}
+.rank-body{flex:1;min-width:0}
+.rank-body h3{font-size:15.5px;margin-bottom:2px}
+.rank-body p{font-size:13px;color:var(--muted);margin:0}
+.rank-score{font-size:13px;color:var(--teal);font-weight:700;flex:none}
+
+/* 时间线 */
+.timeline{border-left:2px solid var(--gold);margin-left:8px;padding-left:22px;display:flex;flex-direction:column;gap:16px}
+.tl-item{position:relative}
+.tl-item::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:3px solid var(--paper);box-shadow:0 0 0 1px var(--gold)}
+.tl-item time{font-size:12.5px;color:var(--muted);font-weight:700}
+.tl-item h3{font-size:15.5px;margin:2px 0 3px}
+.tl-item p{font-size:14px;color:var(--ink-2);margin:0}
+
+/* 相关推荐标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rec-tags a{
+  font-size:13.5px;padding:6px 14px;border-radius:var(--radius-sm);
+  background:var(--teal-soft);color:var(--teal);border:1px solid transparent;transition:border-color .18s;
+}
+.rec-tags a:hover{border-color:var(--teal)}
+
+/* 侧栏 */
+.sidebar{display:flex;flex-direction:column;gap:18px;position:sticky;top:126px}
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 8px}
+.side-card h2{font-size:16px;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side-nav a{
+  display:block;font-size:14px;padding:7px 10px;border-radius:var(--radius-sm);color:var(--ink-2);
+  border-left:3px solid transparent;transition:background .18s;
+}
+.side-nav a:hover{background:var(--gold-soft)}
+.side-nav a.active{background:var(--gold-soft);border-left-color:var(--gold);color:var(--ink);font-weight:700}
+.side-list li{font-size:13.5px;padding:7px 0;border-bottom:1px dashed #eee9dd;display:flex;gap:8px}
+.side-list li:last-child{border-bottom:none}
+.side-list .n{color:var(--gold);font-weight:800;flex:none}
+.side-info{font-size:13px;color:var(--muted);padding-bottom:12px}
+.side-info b{color:var(--ink)}
+
+/* 页尾 */
+.site-foot{background:var(--ink);color:#c8cfdd;padding:var(--space-5) 0 26px;margin-top:var(--space-4)}
+.foot-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:30px}
+.site-foot h2{font-size:15px;color:#fff;margin-bottom:12px;letter-spacing:1px}
+.foot-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:#fff;margin-bottom:12px}
+.foot-brand svg{width:34px;height:34px}
+.site-foot p{font-size:13.5px;color:#a3adc2;max-width:26em}
+.site-foot ul li{margin-bottom:8px}
+.site-foot ul a{font-size:13.5px;color:#c8cfdd}
+.site-foot ul a:hover{color:var(--gold)}
+.foot-note{
+  margin-top:32px;border-top:1px solid #2c3850;padding-top:18px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#8b96ac;
+}
+.foot-note .demo{max-width:640px;line-height:1.6}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:20px;bottom:24px;z-index:50;
+  width:44px;height:44px;border-radius:50%;border:none;background:var(--ink);color:#fff;
+  font-size:18px;cursor:pointer;box-shadow:var(--shadow);opacity:0;visibility:hidden;
+  transition:opacity .2s,visibility .2s,transform .2s;transform:translateY(8px);
+}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--gold);color:var(--ink)}
+
+/* 平板 */
+@media (max-width:1024px){
+  .layout{grid-template-columns:1fr}
+  .sidebar{position:static;order:2;display:grid;grid-template-columns:1fr 1fr}
+  .card-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .comments{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .hero .wrap{grid-template-columns:1fr;gap:var(--space-3)}
+  .hero-art{justify-self:center;max-width:340px}
+  .feature-grid{grid-template-columns:1fr}
+}
+/* 手机 */
+@media (max-width:720px){
+  html{scroll-padding-top:150px}
+  .site-head .wrap{gap:10px;padding:10px 16px}
+  .brand{font-size:18px}
+  .menu-toggle{display:inline-block;margin-left:auto}
+  .main-nav{display:none;order:4;flex-basis:100%;margin:0}
+  .main-nav.open{display:block}
+  .main-nav ul{flex-direction:column;gap:2px}
+  .main-nav a{padding:10px 12px}
+  .head-tools{order:3;flex-basis:100%;gap:8px}
+  .search-box{flex:1}
+  .search-box input{width:100%}
+  .search-box button{padding:8px 14px}
+  .layout{grid-template-columns:1fr}
+  .card-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .comments{grid-template-columns:1fr}
+  .split-cols{grid-template-columns:1fr}
+  .quote-card{grid-template-columns:1fr;text-align:left}
+  .quote-logo{justify-self:start}
+  .foot-grid{grid-template-columns:1fr}
+  .sidebar{grid-template-columns:1fr}
+  .article{padding:20px 18px}
+  .to-top{right:14px;bottom:16px}
+  .announce .wrap{padding:7px 16px;font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .card:hover,.btn:hover,.tag-index a:hover{transform:none}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"ks舞团",
+  "description":"齐舞与编舞作品展示、排练日程、招募考核与动作解析。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"ks舞团新人考核一般考几个动作？","acceptedAnswer":{"@type":"Answer","text":"基础考核考两段：8个八拍的律动跟练和一段16八拍的齐舞片段，现场给30分钟自学，评审看拍点准确率和身体重心转移。"}},
+    {"@type":"Question","name":"齐舞排练每周几次？","acceptedAnswer":{"@type":"Answer","text":"常规周排两次，周二晚7点到9点半在滨江排练厅，周六下午2点到5点合队形。比赛前四周会加一次周日上午的整套走位。"}},
+    {"@type":"Question","name":"零基础能跟得上入门体验课吗？","acceptedAnswer":{"@type":"Answer","text":"体验课从热身、isolation和4个八拍的小组合开始，动作限定在脚步变化和胸口律动，不要求倒立或触碰地板。"}},
+    {"@type":"Question","name":"编舞作品提交后多久得到反馈？","acceptedAnswer":{"@type":"Answer","text":"作品每周三收稿一次，编舞组在周四晚回复，主要标注动作与音乐重音的错位处，通常给3到5条修改建议。"}},
+    {"@type":"Question","name":"参加比赛需要交报名费吗？","acceptedAnswer":{"@type":"Answer","text":"队内统一报名，2026年11月21日的城市齐舞赛报名费每人80元，含保险；交通和食宿自付。"}},
+    {"@type":"Question","name":"排练缺勤几次会被劝退？","acceptedAnswer":{"@type":"Answer","text":"一个赛季缺勤超过4次且未提前请假，会被调至预备队，缺勤记录由队长在共享表里登记，可自行查看。"}}
+  ]
+}
+</script>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="announce">
+    <div class="wrap">
+      <span class="tag">更新</span>
+      <span>11月6日发布春季招募细则：考核日定在11月28日，新增预备队名额6个。</span>
+      <a href="/#faq">查看考核要求</a>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="wrap">
+      <div class="brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true" role="img">
+          <rect width="64" height="64" rx="14" fill="#121a2b"/>
+          <path d="M20 16v32M20 32l18-16M20 32l18 16" stroke="#e0a81c" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="47" cy="18" r="4" fill="#1f6f6b"/>
+        </svg>
+        <span>ks舞团</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <ul>
+          <li><a href="/#overview">团队概览</a></li>
+          <li><a href="/#featured">精选作品</a></li>
+          <li><a href="/#updates">排练动态</a></li>
+          <li><a href="/#channels">舞种频道</a></li>
+          <li><a href="/#deep">编舞解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </nav>
+      <div class="head-tools">
+        <div class="search-box" role="search">
+          <input type="search" id="searchInput" placeholder="搜索舞种、招新、排练…" aria-label="站内搜索">
+          <button type="button" id="searchBtn">找</button>
+        </div>
+      </div>
+      <p class="search-feedback" id="searchFeedback" aria-live="polite"></p>
+    </div>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="hero-eyebrow">HIPHOP · 齐舞 · 编舞创作</span>
+      <h1>ks舞团</h1>
+      <p class="hero-desc">一支以齐舞整齐度和原创编舞见长的城市街舞团体。周排练两场，本赛季主攻11月21日城市齐舞赛，队内保留两队制与可查的缺勤记录表，新人从体验课到考核有明确路径。</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/#guide">报名入门体验课</a>
+        <a class="btn btn-ghost" href="/#updates">看本周排练安排</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>24</strong><span>在册成员</span></div>
+        <div><strong>37</strong><span>编舞存档作品</span></div>
+        <div><strong>周二 / 周六</strong><span>固定排练日</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 420" role="img">
+        <defs>
+          <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#1e2a40"/>
+            <stop offset="1" stop-color="#121a2b"/>
+          </linearGradient>
+          <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f6cf6b"/>
+            <stop offset="1" stop-color="#e0a81c"/>
+          </linearGradient>
+        </defs>
+        <rect x="6" y="6" width="408" height="408" rx="26" fill="url(#bgGrad)"/>
+        <g opacity=".18" stroke="#7c8aa8" stroke-width="1">
+          <path d="M40 100h340M40 160h340M40 220h340M40 280h340M40 340h340"/>
+          <path d="M100 40v340M170 40v340M240 40v340M310 40v340"/>
+        </g>
+        <circle cx="210" cy="200" r="118" fill="none" stroke="#3a4a68" stroke-width="2" stroke-dasharray="4 10"/>
+        <g stroke="url(#goldGrad)" stroke-width="10" stroke-linecap="round" fill="none">
+          <path d="M150 300l40-80 30 40 50-110"/>
+        </g>
+        <g fill="url(#goldGrad)">
+          <circle cx="150" cy="300" r="9"/>
+          <circle cx="220" cy="260" r="9"/>
+          <circle cx="270" cy="150" r="9"/>
+        </g>
+        <g stroke="#1f6f6b" stroke-width="7" stroke-linecap="round">
+          <path d="M96 132h44M96 152h26"/>
+        </g>
+        <text x="96" y="352" fill="#7c8aa8" font-family="sans-serif" font-size="14" letter-spacing="4">COUNT 8 · SNAP</text>
+      </svg>
+      <div class="hero-badge b1"><b>11月28日</b>春季招新考核 · 预备队6席</div>
+      <div class="hero-badge b2"><b>City Groove 齐舞赛</b>11月21日 · 32进16</div>
+    </div>
+  </div>
+</section>
+
+<div class="main-wrap">
+  <div class="wrap">
+    <div class="layout">
+      <main>
+
+        <section class="section" id="overview">
+          <div class="sec-head">
+            <h2>领域概览：一支城市齐舞队怎么运转</h2>
+            <span class="sub">结构 · 分工 · 训练节奏</span>
+          </div>
+          <p style="font-size:15px;color:var(--ink-2);margin-bottom:16px">队里分编舞、队长、外联和新人带训四个岗位，均由成员兼任。周二是律动与基础课，周六是合队形与整套走位，两场都签到。本赛季共24人在册，其中一队12人、预备队12人，预备队每月月底有一次升队评估。</p>
+          <div class="card-grid" data-search-group>
+            <article class="card">
+              <img src="https://picsum.photos/seed/ksdance-rehearsal-a/560/350" width="560" height="350" loading="lazy" alt="排练厅木地板上成员围成半圆练8个八拍齐舞">
+              <div class="card-body">
+                <span class="card-kicker">训练体系</span>
+                <h3>8个八拍拆解训练法</h3>
+                <p>每段齐舞先拆成8个八拍，逐拍对镜重音，卡不上就放慢一半速度，直到全员脚位一致。</p>
+                <span class="card-meta">编舞组 · 10月19日定稿</span>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/ksdance-team-b/560/350" width="560" height="350" loading="lazy" alt="一队与预备队成员在排练厅分列两排练习走位">
+              <div class="card-body">
+                <span class="card-kicker">队伍结构</span>
+                <h3>一队与预备队的分工</h3>
+                <p>一队负责赛事与外演，预备队主攻基础补课。升队看三项：律动准确度、队形记忆、月度出勤。</p>
+                <span class="card-meta">队长 阿柯 · 11月2日更新</span>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/ksdance-music-c/560/350" width="560" height="350" loading="lazy" alt="音箱旁摆着记录卡点的纸质谱与手机计时器">
+              <div class="card-body">
+                <span class="card-kicker">音乐与卡点</span>
+                <h3>重音与卡点的取舍</h3>
+                <p>编舞存档里标记了每段落的鼓点位置，速度快的段落宁可减动作，也不丢拍子。</p>
+                <span class="card-meta">编舞组 · 存档第31号</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="featured">
+          <div class="sec-head">
+            <h2>精选内容推荐</h2>
+            <span class="sub">本周值得看的作品与记录</span>
+          </div>
+          <div class="feature-grid" data-search-group>
+            <article class="feature-main">
+              <span class="tag">本周主推编舞</span>
+              <h3>《旧码头》完整套齐舞</h3>
+              <p>4分12秒，132BPM，音乐取码头铁链与汽笛采样。整段用两次反向横移把队形从3-3-3推到9人一字，副歌里保留一个全员同步的锁肩动作，作为视觉锚点。10月26日首次完整走位，卡点错位集中在第二段鼓花处。</p>
+              <span class="who">编舞：阿柯、林子 · 排练厅 B 场 · 时长 4:12</span>
+            </article>
+            <div class="feature-side">
+              <div class="side-item">
+                <span class="date"><b>11</b>月17日</span>
+                <div><h3>队员轮值 Solo 夜</h3><p>每人1分钟即兴，抽签定音乐，现场录屏存档，作为月度评估参考。</p></div>
+              </div>
+              <div class="side-item">
+                <span class="date"><b>11</b>月9日</span>
+                <div><h3>《旧码头》第二版改段</h3><p>鼓花后的4个八拍改为侧滑接翻身，解决原版走位穿人问题。</p></div>
+              </div>
+              <div class="side-item">
+                <span class="date"><b>11</b>月3日</span>
+                <div><h3>新人带训跟练记录</h3><p>预备队6人完成律动测试，最低得分62分，下周补基础练习。</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="updates">
+          <div class="sec-head">
+            <h2>最新更新</h2>
+            <span class="sub">排练 · 报名 · 赛事</span>
+          </div>
+          <div class="updates" data-search-group>
+            <div class="update-row">
+              <time datetime="2026-11-07">11月7日</time>
+              <span class="utype">报名</span>
+              <p>春季招新报名表开放，截止11月24日，需提交30秒跟练视频与一张全身照。</p>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-11-06">11月6日</time>
+              <span class="utype gold">赛事</span>
+              <p>城市齐舞赛分组出炉，我们与青岩、North Crew、慢速三队同组，11月21日下午首轮。</p>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-11-05">11月5日</time>
+              <span class="utype red">调整</span>
+              <p>11月7日周六排练顺延到下午3点开始，借用的排练厅被学校活动占用两小时。</p>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-11-04">11月4日</time>
+              <span class="utype">作品</span>
+              <p>编舞存档第37号上传：5人小齐舞《雨棚下》，96BPM，副歌用肩部三连震动。</p>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-11-02">11月2日</time>
+              <span class="utype">考核</span>
+              <p>预备队升队评估结果：3人升一队，2人留队，1人转入门班继续基础训练。</p>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-10-30">10月30日</time>
+              <span class="utype gold">外演</span>
+              <p>11月14日商场中庭演出确认，8人上场，曲目《旧码头》缩编版3分钟。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="channels">
+          <div class="sec-head">
+            <h2>分类入口</h2>
+            <span class="sub">按你正在找的内容进入</span>
+          </div>
+          <div class="tag-index">
+            <a href="/#deep">齐舞阵法拆分 <span class="num">12 篇</span></a>
+            <a href="/#faq">新人考核要求 <span class="num">8 条</span></a>
+            <a href="/#guide">零基础体验课 <span class="num">每周三</span></a>
+            <a href="/#featured">原创编舞存档 <span class="num">37 支</span></a>
+            <a href="/#updates">排练日程与请假 <span class="num">滚动更新</span></a>
+            <a href="/#deep">卡点与重音处理 <span class="num">9 篇</span></a>
+            <a href="/#rank">月度队员榜 <span class="num">10 月</span></a>
+            <a href="/#comments">队内经验讨论 <span class="num">31 条</span></a>
+            <a href="/#timeline">赛季时间线 <span class="num">9 个节点</span></a>
+            <a href="/#rec">爵士基础补课 <span class="num">4 节</span></a>
+          </div>
+        </section>
+
+        <section class="section" id="deep">
+          <div class="sec-head">
+            <h2>深度解析：齐舞到底先对脚还是先对拍</h2>
+            <span class="sub">编舞组内部争议的复盘</span>
+          </div>
+          <article class="article">
+            <p class="lead">一支队伍练齐舞，常见两种排序：先统一拍子，再统一脚位；或先统一脚位，再压重音。《旧码头》两版排练恰好各自试了一遍，留下可对照的时间线与数据。</p>
+
+            <h3>一、两版排练的时间线差异</h3>
+            <p>第一版从10月12日开始，编舞组要求全员先跟节拍器把每个八拍的落点喊出来，三天后合脚位。到10月18日第二次完整走位时，第二段鼓花出现集体抢拍，录像回放显示有5人提前约半拍出脚。第二版从10月19日起改为脚位优先：先在地面贴胶带标出脚点，不跟音乐走两遍，再进音乐。10月26日完整走位，抢拍减到2人，位置改为慢半拍。</p>
+            <div class="callout">可核对的判断：对新手比例高的齐舞段，先脚位后重音能减少抢拍，但会把误差从“提前”变成“滞后”；当段落速度超过130BPM，滞后的观感比抢拍更明显，因为音乐重音已经过了。</div>
+
+            <h3>二、两组数据对照</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>对比项</th><th>第一版（拍优先）</th><th>第二版（脚优先）</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>卡点误差人数</td><td class="num">5 人抢拍</td><td class="num">2 人滞后</td></tr>
+                  <tr><td>误差幅度</td><td class="num">约半拍</td><td class="num">约三分之一拍</td></tr>
+                  <tr><td>耗用排练时长</td><td class="num">6 小时</td><td class="num">4.5 小时</td></tr>
+                  <tr><td>新成员完成度</td><td class="num">4 人未过关</td><td class="num">1 人未过关</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>耗时的减少不完全来自方法，第二版删掉了原版中两个交叉换位，动作数量从22个降到19个。因此严格地说，这组数据只能支持“脚位优先对新手更友好”，不能证明它一定更快教会队伍。</p>
+
+            <h3>三、说法差异与转述</h3>
+            <div class="split-cols">
+              <div class="panel">
+                <h4>编舞组说法</h4>
+                <ul>
+                  <li>脚位是骨架，拍子是呼吸，骨架歪了呼吸再齐也散。</li>
+                  <li>11月9日改段后，把鼓花处的4个八拍换成侧滑翻身，误差基本消失。</li>
+                </ul>
+              </div>
+              <div class="panel alt">
+                <h4>队员的反驳</h4>
+                <ul>
+                  <li>侧滑翻身本身比原动作简单，误差消失可能是因为动作变容易。</li>
+                  <li>拍优先派认为：不跟音乐练脚位，练出来的是走路，不是跳舞。</li>
+                </ul>
+              </div>
+            </div>
+            <p>两种说法都成立一半。侧滑翻身确实降低了换位难度；但第二版前两段没换动作，误差也从5人降到2人，说明训练顺序有独立作用。至于“走路”的批评，指的是脱离音乐的机械重复，第二版只在地面标点阶段脱离音乐，时长约40分钟，仍保留节拍器口令。</p>
+
+            <h3>四、可核对的做法</h3>
+            <p>队里最后采用的方案是分段取舍：130BPM以下的段落先脚位，130BPM以上先跟拍再改脚位。《旧码头》里只有副歌达到132BPM，副歌保留拍优先，其余段落改脚优先。检验方式很具体——每次完整走位后数抢拍和滞后的人数，加起来不超过3人，视为该段通过。11月2日、11月9日两次走位都达到了这个标准。</p>
+            <p>对于正在组队的舞者，可以照抄的只有检验指标，不要照抄结论。同一套顺序在不同队伍里可能不适用，因为误差的方向和幅度取决于成员的基础和段落的动作密度。</p>
+          </article>
+        </section>
+
+        <section class="section" id="guide">
+          <div class="sec-head">
+            <h2>体验指南：从旁观到上场要走几步</h2>
+            <span class="sub">入门 · 跟练 · 考核 · 上场</span>
+          </div>
+          <div class="steps" data-search-group>
+            <div class="step">
+              <h3>预约入门体验课</h3>
+              <p>每周三晚7点半，限12人。带一双干净的室内运动鞋，提前10分钟到场做脚踝热身。</p>
+            </div>
+            <div class="step">
+              <h3>跟练4个八拍组合</h3>
+              <p>体验课只教脚步变化与胸口律动，不要求倒立或地面动作。跟着教练喊拍子走三遍。</p>
+            </div>
+            <div class="step">
+              <h3>参加招新考核</h3>
+              <p>11月28日下午2点，两段内容：8个八拍律动跟练、16个八拍齐舞片段，现场30分钟自学。</p>
+            </div>
+            <div class="step">
+              <h3>进预备队磨合</h3>
+              <p>新人先进预备队，连续两次月度评估合格可升一队，评估看律动、记忆和出勤三项。</p>
+            </div>
+          </div>
+          <p style="font-size:13.5px;color:var(--muted);margin-top:14px">体验课免费，考核不收费；比赛报名费每人80元，由外联统一收，含当日保险。</p>
+        </section>
+
+        <section class="section" id="rank">
+          <div class="sec-head">
+            <h2>10月队员榜</h2>
+            <span class="sub">按出勤、卡点准确率、带训次数合计</span>
+          </div>
+          <div class="rank-list" data-search-group>
+            <div class="rank-row">
+              <span class="rank-no">1</span>
+              <div class="rank-body"><h3>阿柯</h3><p>编舞2支，带训4次，卡点准确率94%，缺勤0次。</p></div>
+              <span class="rank-score">96</span>
+            </div>
+            <div class="rank-row">
+              <span class="rank-no">2</span>
+              <div class="rank-body"><h3>林子</h3><p>参与《旧码头》改段，卡点准确率91%，外演联络1场。</p></div>
+              <span class="rank-score">92</span>
+            </div>
+            <div class="rank-row">
+              <span class="rank-no">3</span>
+              <div class="rank-body"><h3>老麦</h3><p>新人带训6次，自己卡点准确率86%，缺勤0次。</p></div>
+              <span class="rank-score">88</span>
+            </div>
+            <div class="rank-row">
+              <span class="rank-no">4</span>
+              <div class="rank-body"><h3>小盏</h3><p>预备队转一队，律动测试84分，队形记忆全对。</p></div>
+              <span class="rank-score">85</span>
+            </div>
+            <div class="rank-row">
+              <span class="rank-no">5</span>
+              <div class="rank-body"><h3>钉子</h3><p>卡点准确率88%，但10月缺勤2次，合计分数被拉低。</p></div>
+              <span class="rank-score">79</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="faq">
+          <div class="sec-head">
+            <h2>常见问题</h2>
+            <span class="sub">考核 · 排练 · 费用 · 出勤</span>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>新人考核一般考几个动作？</summary>
+              <div class="answer">
+                <p>基础考核考两段：8个八拍的律动跟练和一段16八拍的齐舞片段，现场给30分钟自学。</p>
+                <p>评审看拍点准确率和身体重心转移，动作幅度不作为硬指标。11月28日这场的评审是阿柯、林子和老麦三人。</p>
+              </div>
+            </details>
+            <details>
+              <summary>齐舞排练每周几次？</summary>
+              <div class="answer">
+                <p>常规周排两次：周二晚7点到9点半在滨江排练厅，周六下午2点到5点合队形。</p>
+                <p>比赛前四周会加一次周日上午的整套走位。11月因为21日比赛，加了11月8日、15日两个上午场。</p>
+              </div>
+            </details>
+            <details>
+              <summary>零基础能跟得上入门体验课吗？</summary>
+              <div class="answer">
+                <p>体验课从热身、isolation和4个八拍的小组合开始，动作限定在脚步变化和胸口律动，不要求倒立或触碰地板。</p>
+                <p>10月28日那场12人里有5位第一次进排练厅，课后有8人表示能跟上全部内容。</p>
+              </div>
+            </details>
+            <details>
+              <summary>编舞作品提交后多久得到反馈？</summary>
+              <div class="answer">
+                <p>作品每周三收稿一次，编舞组在周四晚回复，主要标注动作与音乐重音的错位处，通常给3到5条修改建议。</p>
+                <p>超过5分钟的长作品拆成两段评，避免反馈集中在开头。存档编号按收稿顺序排，第37号是11月4日上传的《雨棚下》。</p>
+              </div>
+            </details>
+            <details>
+              <summary>参加比赛需要交报名费吗？</summary>
+              <div class="answer">
+                <p>队内统一报名，2026年11月21日城市齐舞赛报名费每人80元，含保险；交通和食宿自付。</p>
+                <p>预赛在下午1点半开始，32进16，每队上场时长不超过4分30秒。分组对手包括青岩、North Crew和慢速。</p>
+              </div>
+            </details>
+            <details>
+              <summary>排练缺勤几次会被劝退？</summary>
+              <div class="answer">
+                <p>一个赛季缺勤超过4次且未提前请假，会被调至预备队，缺勤记录由队长在共享表里登记，可自行查看。</p>
+                <p>请假需在排练前一天晚10点前发到队群，临时伤病可当日补报，附简单说明即可，不计入缺勤。</p>
+              </div>
+            </details>
+            <details>
+              <summary>爵士基础补课适合哪些人？</summary>
+              <div class="answer">
+                <p>适合第一次接触舞蹈、或者习惯了力量型动作但肩颈僵硬的舞者。每周三体验课前半小时有4节连续的补课，每次只练一个部位。</p>
+                <p>补课由老麦带，用镜面和慢速口令，动作不追求幅度，先解决转肩、骨盆控制和呼吸的配合。</p>
+              </div>
+            </details>
+            <details>
+              <summary>一队和预备队能一起排练吗？</summary>
+              <div class="answer">
+                <p>周六下午的合队形两支队一起上，周二的分开练。预备队成员在合队形时站后排，明确跟走位，不要求记住全部动作。</p>
+                <p>这种安排是为了让预备队提前熟悉比赛队形，但也会拖慢一队的整套走位速度，11月起改为周六前90分钟分开、后90分钟合练。</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section class="section" id="comments">
+          <div class="sec-head">
+            <h2>队内与观众评论</h2>
+            <span class="sub">含中性意见与吐槽</span>
+          </div>
+          <div class="comments">
+            <article class="comment">
+              <div class="who"><span class="avatar">林</span><div><b>林子</b><br><span>一队 · 11月9日</span></div></div>
+              <p>《旧码头》第二版改段后侧滑翻身确实稳，16个人一起过鼓花不再穿人。</p>
+              <div class="quote">“误差从抢拍变滞后，观感上还是副歌最明显。”</div>
+            </article>
+            <article class="comment">
+              <div class="who"><span class="avatar">麦</span><div><b>老麦</b><br><span>带训 · 11月7日</span></div></div>
+              <p>新来的6个人里，有2个第一天就能跟上8个八拍，另外几个是脚踝发力不对，不是学不会。</p>
+            </article>
+            <article class="comment">
+              <div class="who"><span class="avatar">钉</span><div><b>钉子</b><br><span>一队 · 11月6日</span></div></div>
+              <p>榜上排第五有点不服，缺勤两次是因为公司排班。分数还是公开的，下个月补回来。</p>
+            </article>
+            <article class="comment">
+              <div class="who"><span class="avatar">盏</span><div><b>小盏</b><br><span>预备队 · 11月3日</span></div></div>
+              <p>从预备队升上来那场评估，律动测试84分，队形记忆全对，卡点反而一般。要是三项加权，我的分不会那么高。</p>
+              <div class="quote">“评估标准里其实没写卡点权重多少，这点该讲清楚。”</div>
+            </article>
+            <article class="comment">
+              <div class="who"><span class="avatar">野</span><div><b>野团观众</b><br><span>观众 · 10月29日</span></div></div>
+              <p>在商场看过一次外演，《旧码头》缩编版3分钟最带感，后面的即兴 Solo 就散了点。</p>
+            </article>
+            <article class="comment">
+              <div class="who"><span class="avatar">小</span><div><b>小满</b><br><span>体验课学员 · 10月28日</span></div></div>
+              <p>第一次进排练厅，热身就出了汗。体验课教的4个八拍回家自己练，第二天腿有点酸，动作没忘。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="timeline">
+          <div class="sec-head">
+            <h2>赛季时间线</h2>
+            <span class="sub">10月至今</span>
+          </div>
+          <div class="timeline">
+            <div class="tl-item"><time datetime="2026-10-12">10月12日</time><h3>《旧码头》第一版开排</h3><p>拍优先，节拍器口令三天，10月18日首次完整走位出现5人抢拍。</p></div>
+            <div class="tl-item"><time datetime="2026-10-19">10月19日</time><h3>改为脚位优先</h3><p>地面贴胶带标脚点，不跟音乐走两遍，10月26日走位误差减到2人滞后。</p></div>
+            <div class="tl-item"><time datetime="2026-11-02">11月2日</time><h3>预备队升队评估</h3><p>3人升一队，2人留队，1人转入门班。</p></div>
+            <div class="tl-item"><time datetime="2026-11-06">11月6日</time><h3>城市齐舞赛分组公布</h3><p>与青岩、North Crew、慢速同组，11月21日下午首轮。</p></div>
+            <div class="tl-item"><time datetime="2026-11-09">11月9日</time><h3>鼓花段第二次改版</h3><p>4个八拍改侧滑翻身，11月15日上午加排整套走位。</p></div>
+            <div class="tl-item"><time datetime="2026-11-28">11月28日</time><h3>春季招新考核</h3><p>下午2点，题目与本次发布细则一致，预备队6个名额。</p></div>
+          </div>
+        </section>
+
+        <section class="section" id="news">
+          <div class="sec-head">
+            <h2>相关资讯</h2>
+            <span class="sub">周边赛事与场地变动</span>
+          </div>
+          <div class="updates" data-search-group>
+            <div class="update-row">
+              <time datetime="2026-11-05">11月5日</time>
+              <span class="utype">赛事</span>
+              <p>青岩公布参赛名单，12人满编，队长表示首轮不会正面撞我们。</p>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-11-04">11月4日</time>
+              <span class="utype red">场地</span>
+              <p>滨江排练厅B场11月12日至14日检修，三天的练习改到东区文化馆二楼。</p>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-11-01">11月1日</time>
+              <span class="utype gold">规则</span>
+              <p>城市齐舞赛今年新增“原创声明”一栏，需在11月18日前提交编舞作者名单。</p>
+            </div>
+            <div class="update-row">
+              <time datetime="2026-10-31">10月31日</time>
+              <span class="utype">经验</span>
+              <p>青岩公开的8个八拍跟练视频里，副歌用了三段连续锁肩，队里拿去比对动作循环。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="testimony">
+          <div class="sec-head">
+            <h2>创作者证言</h2>
+            <span class="sub">编舞组内部复盘</span>
+          </div>
+          <div class="quote-card">
+            <blockquote>“《旧码头》两次改版不是越改越好，是越改越知道自己在哪里不行。第一版想要的东西太多，第二版砍掉两个换位，齐了，也就没那么野了。齐舞的代价就在这儿。”
+              <cite>编舞 阿柯 · 11月9日队内复盘会</cite>
+            </blockquote>
+            <div class="quote-logo" aria-hidden="true">旧码头<br>B版</div>
+          </div>
+        </section>
+
+        <section class="section" id="rec">
+          <div class="sec-head">
+            <h2>相关推荐</h2>
+            <span class="sub">按当前练习进度选</span>
+          </div>
+          <div class="rec-tags">
+            <a href="/#deep">130BPM以上齐舞卡点处理</a>
+            <a href="/#guide">入门体验课鞋与服装建议</a>
+            <a href="/#faq">预备队升一队评估三项权重</a>
+            <a href="/#updates">东区文化馆临时排练场地址</a>
+            <a href="/#deep">鼓花段落误差检查表</a>
+            <a href="/#rank">月度队员榜计分公式</a>
+            <a href="/#comments">爵士基础补课转肩练习</a>
+            <a href="/#news">原创声明填写注意</a>
+            <a href="/#timeline">比赛前四周加排安排</a>
+          </div>
+        </section>
+
+      </main>
+
+      <aside class="sidebar" aria-label="侧栏导航与信息">
+        <div class="side-card">
+          <h2>栏目导航</h2>
+          <nav class="side-nav" id="sideNav">
+            <a href="/#overview">团队概览</a>
+            <a href="/#featured">精选内容</a>
+            <a href="/#updates">最新更新</a>
+            <a href="/#channels">分类入口</a>
+            <a href="/#deep">深度解析</a>
+            <a href="/#guide">体验指南</a>
+            <a href="/#rank">月度队员榜</a>
+            <a href="/#faq">常见问题</a>
+            <a href="/#comments">队内评论</a>
+            <a href="/#timeline">赛季时间线</a>
+            <a href="/#news">相关资讯</a>
+            <a href="/#rec">相关推荐</a>
+          </nav>
+        </div>
+        <div class="side-card">
+          <h2>近期要事</h2>
+          <ul class="side-list">
+            <li><span class="n">1</span><span>11月21日城市齐舞赛首轮，下午1点半进场。</span></li>
+            <li><span class="n">2</span><span>11月28日招新考核，报名11月24日截止。</span></li>
+            <li><span class="n">3</span><span>11月12日至14日排练改到东区文化馆。</span></li>
+            <li><span class="n">4</span><span>11月18日前提交原创声明作者名单。</span></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h2>本期参与</h2>
+          <div class="side-info">
+            <p>在册成员 <b>24</b> 人，预备队 <b>12</b> 人。<br>本周排练 <b>2</b> 场，加排 1 场。<br>编舞存档累计 <b>37</b> 支。</p>
+            <p>资料更新：<b>2026年11月8日</b></p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#1e2a40"/>
+            <path d="M20 16v32M20 32l18-16M20 32l18 16" stroke="#e0a81c" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>ks舞团</span>
+        </div>
+        <p>以齐舞整齐度为核心的城市街舞团体，两队制运营，公开出勤与评估记录。</p>
+      </div>
+      <div>
+        <h2>训练</h2>
+        <ul>
+          <li><a href="/#overview">训练体系</a></li>
+          <li><a href="/#guide">入门体验课</a></li>
+          <li><a href="/#deep">齐舞阵法拆分</a></li>
+          <li><a href="/#rank">月度队员榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>招募</h2>
+        <ul>
+          <li><a href="/#faq">新人考核要求</a></li>
+          <li><a href="/#timeline">赛季时间线</a></li>
+          <li><a href="/#updates">排练日程与请假</a></li>
+          <li><a href="/#rec">相关推荐</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>交流</h2>
+        <ul>
+          <li><a href="/#comments">队内评论</a></li>
+          <li><a href="/#testimony">创作者证言</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p class="demo">页面条目、人物、分数与时间为演示示例数据，用于展示栏目结构；实际排期以队内共享表为准。</p>
+      <p>© 2026 ks舞团 · 内容更新时间 2026-11-08</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  var menuToggle=document.getElementById('menuToggle');
+  var mainNav=document.getElementById('mainNav');
+  menuToggle.addEventListener('click',function(){
+    var open=mainNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded',open?'true':'false');
+    menuToggle.textContent=open?'收起':'菜单';
+  });
+  mainNav.addEventListener('click',function(e){
+    if(e.target.tagName==='A' && window.matchMedia('(max-width:720px)').matches){
+      mainNav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded','false');
+      menuToggle.textContent='菜单';
+    }
+  });
+
+  // 侧栏滚动高亮
+  var links=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var map={};
+  links.forEach(function(a){
+    var id=a.getAttribute('href').replace('/#','');
+    var el=document.getElementById(id);
+    if(el) map[id]={link:a,el:el};
+  });
+  var ticking=false;
+  function highlight(){
+    ticking=false;
+    var y=window.scrollY+160, current=null;
+    Object.keys(map).forEach(function(id){
+      var o=map[id];
+      if(o.el.offsetTop<=y) {
+        if(!current || o.el.offsetTop>map[current].el.offsetTop) current=id;
+      }
+    });
+    links.forEach(function(a){a.classList.remove('active');});
+    if(current) map[current].link.classList.add('active');
+  }
+  window.addEventListener('scroll',function(){
+    if(!ticking){ticking=true;window.requestAnimationFrame(highlight);}
+  },{passive:true});
+  highlight();
+
+  // 回到顶部
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>520) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+  });
+
+  // 本地搜索
+  var input=document.getElementById('searchInput');
+  var btn=document.getElementById('searchBtn');
+  var feedback=document.getElementById('searchFeedback');
+  function doSearch(){
+    var q=input.value.trim().toLowerCase();
+    feedback.style.display='none';
+    feedback.textContent='';
+    var groups=Array.prototype.slice.call(document.querySelectorAll('[data-search-group]'));
+    if(!q){
+      groups.forEach(function(g){
+        Array.prototype.forEach.call(g.children,function(c){c.style.display='';});
+      });
+      return;
+    }
+    var found=0;
+    groups.forEach(function(g){
+      Array.prototype.forEach.call(g.children,function(c){
+        if(c.textContent.toLowerCase().indexOf(q)>-1){c.style.display='';found++;}
+        else {c.style.display='none';}
+      });
+    });
+    if(found===0){
+      feedback.style.display='block';
+      feedback.textContent='没有找到包含「'+input.value.trim()+'」的条目，试试“招新”“齐舞”“卡点”“体验课”。';
+    } else {
+      feedback.style.display='block';
+      feedback.style.color='var(--teal)';
+      feedback.textContent='找到 '+found+' 条匹配内容。清除搜索框可恢复全部。';
+    }
+  }
+  btn.addEventListener('click',doSearch);
+  input.addEventListener('input',doSearch);
+  input.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){e.preventDefault();doSearch();}
+  });
+})();
+</script>
+</body>
+  </html>
